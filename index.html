@@ -8,27 +8,25 @@
     </head>
     <body>
         <h1>ToDo list</h1>
-            <div class="meninp">
-                <div class="inp">
-                    <div class="inppoz">
-                        <input type="text" id="newtask" placeholder="new task">
-                    </div>
-                    <div class="inppoz">
-                        <button id="add" type="submit" value="addvalue"><a href=""><img class="addImg" src="./img/plus.svg" alt="add"></a></button> 
-                    </div>
+        <div class="meninp">
+            <div class="inp">
+                <div class="inppoz">
+                    <input type="text" id="newtask" value=" " placeholder="new task">
                 </div>
-                <div class="menu">
-                    <select name="selval" class="selvalue">
-                        <option value="active">active</option>
-                        <option value="completed">completed</option>
-                        <option value="option">delete</option>
-                    </select>                    
+                <div class="inppoz">
+                    <button type="button" id="add" ><img class="addImg" src="./img/plus.svg" alt="add"></button> 
                 </div>
             </div>
-
-          <div class="task1">
-            <p id="t1">task1</p>
+            <div class="menu">
+                <select name="selval" class="selvalue">
+                    <option value="active">active</option>
+                    <option value="completed">completed</option>
+                    <option value="option">delete</option>
+                </select>                    
+            </div>
         </div>
+    
+    <div id="conteinerTask" class="conteinerTask"></div>
 
-          <script src="./js/script.js"> </script>
+    <script src="./js/script.js"> </script>
 </html>

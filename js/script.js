@@ -4,13 +4,34 @@ window.onload = init;
 
 function init() {
     const add = document.getElementById('add');
+    let select = document.getElementById('sel');
+
+    let selectedOption = 'active';
+
+    select.onchange = function() {
+        const selectedIndex = select.selectedIndex;
+      
+        if( selectedIndex == 1 ) {
+            selectedOption = 'active';
+        };
+        if( selectedIndex == 2 ) {
+            selectedOption = 'comleted';
+        };
+        if( selectedIndex == 3 ) {
+            selectedOption = 'deleted';
+        };
+    };
+
     add.onclick = function() {
-        createTask();
+        if (selectedOption === 'active') {
+            createTask();
+        }
     }
 };
 
+
 function createTask() {
-    let conteiner = document.getElementById('conteinerTask');
+    let conteiner = document.getElementById('activeTaskConteiner');
     let newTask = document.createElement('div');
     let text = document.createElement('div');
     let buttonDone = document.createElement('div');

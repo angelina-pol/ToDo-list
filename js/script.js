@@ -9,17 +9,9 @@ function init() {
     let selectedOption = 'active';
 
     select.onchange = function() {
-        const selectedIndex = select.selectedIndex;
-      
-        if( selectedIndex == 1 ) {
-            selectedOption = 'active';
-        };
-        if( selectedIndex == 2 ) {
-            selectedOption = 'comleted';
-        };
-        if( selectedIndex == 3 ) {
-            selectedOption = 'deleted';
-        };
+        selectedOption = getSelectedOption(select.selectedIndex);
+
+        changeSelectByState(selectedOption);
     };
 
     add.onclick = function() {
@@ -29,6 +21,26 @@ function init() {
     }
 };
 
+function getSelectedOption(index) {
+    switch (index) {
+        case 1:
+            return 'active';
+        case 2:
+            return 'completed';
+        case 3:
+            return 'deleted';
+    }
+};
+
+function changeSelectByState(state) {
+    const conteinerCompleted = document.getElementById('completedTaskConteiner');
+    const conteinerDeleted = document.getElementById('deletedTaskConteiner');
+    const conteinerActive = document.getElementById('activeTaskConteiner');
+
+    conteinerActive.classList[state === 'active' ? 'remove' : 'add']('invisible');
+    conteinerCompleted.classList[state === 'completed' ? 'remove' : 'add']('invisible');
+    conteinerDeleted.classList[state === 'deleted' ? 'remove' : 'add']('invisible');
+}
 
 function createTask() {
     let conteiner = document.getElementById('activeTaskConteiner');

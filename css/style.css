@@ -125,7 +125,7 @@ button {
 .task {
         display: inline-block;
         display: flex;
-        border: 5px solid #A68130;
+        border: 5px solid #FFDE94;
         background-color: #FFFFFF;
         border-radius: 10px;
         height: 60px;
@@ -135,9 +135,13 @@ button {
         align-items: center;
 }
 
-.conteinerTask {
+.taskConteiner {
     width: 60px;
     height: 780px;
     display: flex;
     flex-direction: column;
+}
+
+.invisible {
+    display: none;
 }

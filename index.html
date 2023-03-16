@@ -18,15 +18,20 @@
                 </div>
             </div>
             <div class="menu">
-                <select name="selval" class="selvalue">
-                    <option value="active">active</option>
-                    <option value="completed">completed</option>
-                    <option value="option">delete</option>
+                <select id = sel name="selval" class="selvalue">
+                    <option selected="selected" disabled="disabled">Мои задачи</option>
+                    <option id="1" value="active">active</option>
+                    <option id="2" value="completed">completed</option>
+                    <option id="3" value="option">deleted</option>
                 </select>                    
             </div>
         </div>
     
-    <div id="conteinerTask" class="conteinerTask"></div>
+    <div id="activeTaskConteiner" class="taskConteiner"></div>
+
+    <div id="completedTaskConteiner" class="taskConteiner invisible"></div>
+
+    <div id="deletedTaskConteiner" class="taskConteiner invisible"></div>
 
     <script src="./js/script.js"> </script>
 </html>

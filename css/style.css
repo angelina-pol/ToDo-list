@@ -87,7 +87,15 @@ input {
 }
 
 button {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF00;
+}
+
+.buttonDone {
+    opacity: 0;
+}
+
+.buttonDelete {
+    opacity: 0; 
 }
 
 .addImg {

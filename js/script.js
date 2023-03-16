@@ -69,10 +69,18 @@ function createTask() {
     buttonDone.onclick = function() {
         conteinerActive.removeChild(newTask);
         conteinerCompleted.appendChild(newTask);
+        newTask.style.backgroundColor = '#E8FFC4';
+        newTask.style.border = '5px solid #79A630';
+        buttonDone.classList.add('buttonDone');
+        buttonDelete.classList.add('buttonDelete');
     };
 
     buttonDelete.onclick = function() {
         conteinerActive.removeChild(newTask);
         conteinerDeleted.appendChild(newTask);
+        newTask.style.backgroundColor = '#FFC4E1';
+        newTask.style.border = '5px solid #A6306A';
+        buttonDone.classList.add('buttonDone');
+        buttonDelete.classList.add('buttonDelete');
     }
 }

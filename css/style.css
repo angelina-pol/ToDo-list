@@ -45,41 +45,50 @@ html {
 h1 {
     color: #A6306A;
     font-family: 'Poetsen One', sans-serif;
-    font-size: 64px;
+    font-size: 5em;
     text-align: center;
-    padding-top: 65px;
-    padding-bottom: 70px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: #FFC4E1;
-    border-bottom: 5px solid #A6306A;
+    border-bottom: 0.08em solid #A6306A;
+    margin-bottom: 1em;
 }
 
 .meninp {
     display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 30px;
 }
 
 .inp {
-    display: inline-block;
     display: flex;
-    border: 5px solid #A68130;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.4em solid #A68130;
     background-color: #FFFFFF;
-    border-radius: 10px;
-    height: 60px;
-    margin-left: 100px;
-    margin-top: 80px;
-    width: 780px;
+    border-radius: 0.8em;
+    width: 70%;
 }
 
 .menu {
     display: inline-block;
 }
 
-.inppoz {
-    display: inline-block;
-    margin: auto;
+.inputText {
+    width: 80%;
+}
+
+.inputButton {
+    padding-right: 1em;
 }
 
 input {
-    width: 735px;
+    width: 100%;
     height: 40px;
     padding-left: 20px;
     font-family: 'Poetsen One', sans-serif;
@@ -113,13 +122,10 @@ button {
     font-family: 'Poetsen One', sans-serif;
     font-size: 32px;
     border-radius: 10px;
-    width: 300px;
-    height: 60px;
     color: #79A630;
     background-color: #E8FFC4;
-    top: 284px;
-    margin-top: 80px;
-    margin-left: 45px;
+
+    height: 100%;
 }
 
 .textStyle {
@@ -131,23 +137,28 @@ button {
 }
 
 .task {
-        display: inline-block;
-        display: flex;
-        border: 5px solid #FFDE94;
-        background-color: #FFFFFF;
-        border-radius: 10px;
-        height: 60px;
-        margin-left: 100px;
-        margin-top: 40px;
-        width: 780px;
-        align-items: center;
+    display: inline-block;
+    display: flex;
+    border: 5px solid #FFDE94;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 60px;
+    margin-top: 40px;
+    width: 780px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .taskConteiner {
-    width: 60px;
-    height: 780px;
     display: flex;
     flex-direction: column;
+    height: 60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 30px;
 }
 
 .invisible {
